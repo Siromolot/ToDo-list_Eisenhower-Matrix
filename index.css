@@ -1,0 +1,144 @@
+/* Общие стили */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url(../fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Roboto_Thin";
+    src: url(../fonts/Roboto-Thin.ttf);
+}
+
+@font-face {
+    font-family: "Roboto_Light";
+    src: url(../fonts/Roboto-Light.ttf);
+}
+
+@font-face {
+    font-family: "Roboto_Bold";
+    src: url(../fonts/Roboto-Bold.ttf);
+}
+
+@font-face {
+    font-family: "Roboto_Medium";
+    src: url(../fonts/Roboto-Medium.ttf);
+}
+
+/* Локальные стили */
+body {
+    background: linear-gradient(135deg, #80deea, #b8f1f8);
+    min-height:calc(100vh - 50px);
+}
+.main_box {
+    display: flex;
+    flex-direction: column;
+    width:1024px;
+    justify-content: space-between;
+    margin:50px auto;
+}
+
+.field_name{
+    transform:rotate(270deg);
+    width: 30px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.priority {
+    font-family: "Roboto_Bold";
+    font-size: 16px;
+    color: #454546;
+    text-align: center;
+}
+
+.row {
+    display: flex;
+    width:100%;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.field {
+    background-color: #f6f7f7;
+    /* border:1px solid #454546; */
+    padding: 20px;
+    border-radius: 15px;
+    width:calc(50% - 40px);
+    margin:4px;
+    box-shadow: 1.5px 1.5px 3px #00828f;
+}
+
+.field_topic {
+    font-family: "Roboto_Bold";
+    letter-spacing: 0.3px;
+    font-size:16px;
+    text-transform: uppercase;
+    /* color: #efb667; */
+    color:#00828f;
+    margin-bottom:15px;
+    text-align: center;
+}
+
+.tasks_list {
+    width:100%;
+}
+
+.task{
+    /* width:100%; */
+    background-color: #fff;
+    font-family: Roboto;
+    font-size: 11px;
+    border-radius: 5px;
+    padding:10px;
+    margin-bottom:5px;
+    box-shadow: 1px 1px 3px #ababac;
+    transition:0.2s;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+}
+
+.task:hover {
+    cursor:pointer;
+    background: #b8f1f8;
+}
+
+.task:focus {
+    cursor: text;
+}
+
+.add_task {
+    font-family: "Roboto";
+    font-size:14px;
+    color: #454546;
+    margin-top:15px;
+    cursor:pointer;
+}
+
+.icon_block {
+    width:100%;
+    /* float:right; */
+}
+
+i {
+    float:right;
+    margin-left:10px;
+}
+
+.done {
+    text-decoration: line-through;
+    background: #d3cb69 !important;
+}
+
+.dragged {
+    opacity:0;
+}
+
+.under {
+    opacity: 0.5;
+}
